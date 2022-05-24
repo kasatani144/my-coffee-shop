@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe coffee shop</title>
+
+    <script src="https://kit.fontawesome.com/c5955879d0.js" crossorigin="anonymous"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwy8QMhDo42DkeH_gfigsAycLLM1MJPxM&callback=initMap"
+      defer
+    ></script>
+
+    <!----Link css file---->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!------------Header section------>
+
+    <!---------- menu Start--------->
+    <header class="header">
+        <section class="header-section">
+            <a href="#home" class="logo"><img src="images/logo.png" alt="A coffee logo"></a>
+
+            <nav class="navbar">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#about" class="nav-item">About Us</a>
+                <a href="#menu" class="nav-item">Menu</a>
+                <a href="#gallary" class="nav-item">Gallery</a>
+                <a href="#contact" class="nav-item">Contact us</a>
+                
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+    </header>
+     <!---------- menu Start--------->
+
+
+     <div class="home-bg">
+         <div class="home" id="home">
+             <div class="content">
+                 <h2>Coffee Fellows</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus dolorum officiis numquam quibusdam molestias dolorem illum.</p>
+                 <a href="#about" class="btn">about us</a>
+             </div>
+         </div>
+     </div>
+
+ <!------------Header section------>
+
+ <!-----------------ABOUT SECTION---------->
+ <div class="about" id="about">
+     <div class="about-img">
+         <img src="images/about1.png" alt="a girl with coffee" height="300px" width="300px">
+     </div>
+     <div class="content">
+         <h3>A cup of coffee can complete your day</h3>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci placeat incidunt mollitia sit iure, nesciunt qui a quos accusamus expedita aspernatur ipsum natus, minus laborum rerum necessitatibus magni Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi perferendis neque magni nam commodi.
+         </p>
+         <a href="#menu" class="btn">Our menu</a>
+     </div>
+ </div>
+
+
+ <!-------------Menu section--------------->
+ <section class="pop-menu" id="menu">
+     <div class="menu">
+         <div class="content">
+             <h2> Popular Menu</h2>
+         </div>
+
+         <div class="box-container">
+            
+            <div class="box">
+                <img src="images/menu4.jpg" alt="cup of coffee " height="200" width="200">
+                <h4>Coffee Love</h4>
+                
+               </div>
+               
+               <div class="box">
+                <img src="images/menu6.jpg" alt="cup of coffee " height="200" width="200">
+                <h4>Cappuccino</h4>
+               </div> 
+
+               <div class="box">
+                <img src="images/latte.jpg" alt="cup of coffee " height="200" width="200">
+                <h4>coffee Latte</h4>
+               </div> 
+
+               <div class="box">
+                <img src="images/menu7.jpg" alt="cup of coffee " height="200" width="200">
+                <h4>Black Coffee</h4>
+               </div> 
+
+               <div class="box">
+                <img src="images/espresso.jpg" alt="cup of coffee " height="200" width="200">
+                <h4>Espresso</h4>
+               </div> 
+
+               <div class="box">
+                <img src="images/mocha.jpg" alt="cup of coffee " height="200" width="200">
+                <h4>Mocha</h4>
+               </div> 
+         </div>
+     </div>
+ </section>
+
+ <!---------opening hours---------->
+ <section class="gallary" id="gallary">
+     <div class="heading">
+         <h3>Our Gallery</h3>
+     </div>
+
+     <div class="box-container">
+         <img src="images/gallary1.jpg" alt="gallary picturs">
+         <img src="images/gallary-2.jpeg" alt="gallary picturs">
+         <img src="images/gallary-3.jpg" alt="gallary picturs">
+         <img src="images/gallary-4.jpg" alt="gallary picturs">
+         <img src="images/gallary5.jpg" alt="gallary picturs">
+         <img src="images/coffee-head1.jpg" alt="gallary picturs">
+         <img src="images/gallary6.jpg" alt="gallary picturs">
+         <img src="images/gallary7.jpg" alt="gallary picturs">
+
+         
+
+     </div>
+ </section>
+           
+
+<!---------opening hours---------->
+<!----------------Contact form---------->
+<section class="contact" id="contact">
+
+    <div class="heading">
+        <h3>Contact Us</h3>
+    </div>
+
+    <div class="row">
+        <div class="image">
+            <img src="images/final.png" alt="a party pic">
+        </div>
+        <form action="" method="post">
+            <h3>Book a Table</h3>
+            <input type="text" class="box" name="name" placeholder="Enter your name" required maxlength="20">
+            <input type="number" class="box" name="number" placeholder="Enter your Number" required  >
+            <input type="text" class="box" name="guests" placeholder="How many guests" required maxlength="20"><br>
+            <input type="submit" class="btn" name="send" value="send Message" >
+        </form>
+    </div>
+</section>
+
+
+<!----------------Contact form---------->
+
+<!-------------Footer section -------------->
+<section class="footer" >
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h4>our email</h4>
+            <p>coffeefellows14@gmail.com</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-clock"></i>
+            <h4>Opening hours</h4>
+            <p>7:00 to 19:00</p>
+            <p>Sunday closed</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-map-marker-alt" id="map" onclick="initMap()"></i>
+            <h4>Loaction</h4>
+            <p>Munich, Germany </p>
+        </div>
+        <div class="box">
+            <i class="fas fa-phone"></i>
+            <h4>our number</h4>
+            <p>+123 456-678-900</p>
+            <p>+49 156*******49</p>
+        </div>
+    </div>
+        <div class="credit"> &copy; copyright @ 2022 by <span>Mr. web designer</span> all rights reserved!</div>
+   
+</section>
+  
+</div>
+
+
+<!-------------Footer section -------------->
+
+
+
+
+
+    <!-------Link a js file---->
+    <script src="script.js"></script>
+</body>
+</html>
